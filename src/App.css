@@ -1,0 +1,130 @@
+body{
+  box-sizing: border-box;
+  background-color: rgba(203, 203, 221, 0.6);
+}
+
+.App{
+  width: 1000px;
+  background-color: white;
+  height: 70vh;
+  margin:70px auto 0;
+  padding:10px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.Search_filter{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* App Header */
+.app_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  color: rgba(0, 0, 0, 0.605);
+}
+
+/* Search panel */
+.search_input{
+  width: 80%;
+  margin-right: 5px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.403);
+  border-radius: 4px;
+  height: 30px;
+  padding: 0;
+}
+
+/* Post status filter */
+.filter_all {
+  background-color: rgba(65, 157, 244, 0.769);
+  color: white;
+  height: 34px;
+  padding: 1px 20px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.filter_liked {
+  height: 34px;
+  padding: 1px 20px;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* Post list */
+.post_list{
+  list-style-type: none;
+}
+
+/* Post list item */
+.post_list_item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.icon >  .fa-star {
+  color: rgb(255, 234, 0);
+}
+
+.icon:hover > .fa-trash {
+  color: rgb(213, 58, 19);
+}
+
+
+/* Post add form */
+.post_add_form{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.form_input{
+  width: 80%;
+  margin-right: 5px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.403);
+  border-radius: 4px;
+  height: 30px;
+  padding: 0;
+}
+
+.add_btn {
+  height: 34px;
+  padding: 1px 20px;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* add style  when user clicks*/
+.important span{
+  color: rgb(255, 234, 0);  
+}
+
+.important .fa-star {
+  color: black
+}
+
+span:hover{
+  cursor: pointer;
+} 
+
+.icon:nth-child(3) {
+  display: none;
+  color: rgb(235, 64, 26);
+}
+
+.like .icon:nth-child(3) {
+  display: inline-block;
+}
